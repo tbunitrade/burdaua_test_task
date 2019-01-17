@@ -10,7 +10,7 @@
         $sum = 0;
         $target = 50;        
         $array = array(); 
-        echo 'My target = ' . $target . '<br> current sum = ' . $sum . '<br>';        
+        echo 'My target > ' . $target . '<br> current sum = ' . $sum . '<br>';        
 
         function createNumber() 
         {
@@ -24,7 +24,8 @@
          
             if ( $sum < $target )          
             {   
-                $value = createNumber();         
+                
+                $value = rand(0,10);                 
                 $sum = $sum + $value;
                 $array[] =  $sum ;
             }
